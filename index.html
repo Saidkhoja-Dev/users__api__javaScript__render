@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>123456789</title>
+</head>
+<body>
+    
+    <div class="wrapper">
+        <h1 class="text-center fw-bold p-3 text__blinker">Users API</h1>
+        
+        <hr class="border border-info">
+        <div class="row">
+            <div class="col-12 col-lg-4">
+                <h2 class="h2 fw-bold text__blinker">Users</h2>
+                <p class="mb-3">Count of Users: <span class="users__result"></span></p>
+                
+                <ul class="list users__wrapper">
+                    
+                </ul>
+            </div>
+            
+            <div class="col-12 col-lg-4">
+                <h2 class="h2 fw-bold text__blinker">Posts</h2>
+                <p class="mb-3">Count of Posts: <span class="posts__result"></span></p>
+                
+                <ul class="list posts__wrapper">
+                    
+                </ul>
+            </div>
+            
+            <div class="col-12 col-lg-4">
+                <h2 class="h2 fw-bold text__blinker">Comments</h2>
+                <p class="mb-3">Count of Comments: <span class="comments__result"></span></p>
+                
+                <ul class="list comments__wrapper">
+                    
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+    
+    <template id="users__template">
+        <li class="card border-info p-2 mb-3 users__id">
+            <p class="h4 d-flex"><a class="d-block users__name" href="#">Leanne Graham</a>-<a class="users__username"></a></p>
+            
+            <p class="fw-bold h5">Email : <a class="fw-normal fs-5 users__email" href="#">Sincere@april.biz</a></p> 
+            
+            <p class="fw-bold h5">Country : <span class="fw-normal fs-5 users__country">Gwenborough</span></p> 
+            
+            <p class="fw-bold h5">Company : <span class="fw-normal fs-5 users__company">Romaguera-Crona</span></p> 
+            
+            <p class="fw-bold h5">Website : <a class="fw-normal fs-5 users__website" href="#">hildegard.org</a></p> 
+        </li>
+    </template>
+    
+    <template id="posts__template">
+        <li class="card border-info p-2 mb-3 posts__id">
+            <a class="h4 posts__title" href="#">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt, nihil.</a>
+            
+            <p class="fw-bold h5">Post : <span class="fw-normal fs-5 posts__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eius error, deserunt animi atque ipsa officiis fugiat ea pariatur blanditiis fuga dolores explicabo perferendis vel at, nemo nobis, quam ipsam.</span></p>
+        </li>
+    </template>
+    
+    <template id="comments__template">
+        <li class="card border-info p-2 mb-3">
+            <p class="h5">Title: <span class="comments__title"></span></p>
+            
+            <p class="fw-bold h5">Email : <a class="fw-normal fs-5 comments__email"></a></p>
+            
+            <p class="fw-bold h5">Comments : <span class="fw-normal fs-5 comments__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eius error, deserunt animi atque ipsa officiis fugiat ea pariatur blanditiis fuga dolores explicabo perferendis vel at, nemo nobis, quam ipsam.</span></p>
+        </li>
+    </template>
+    
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/script.js"></script>
+    
+</body>
+</html>
